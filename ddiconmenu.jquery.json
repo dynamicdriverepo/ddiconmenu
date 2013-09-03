@@ -1,0 +1,25 @@
+{
+  "name": "ddiconmenu",
+  "title": "DD Icon Menu",
+  "description": "DD Icon Menu creates an icon based vertical menu that sits fixed on the left edge of the browser window and expands to show sub menus onMouseover.  Infinite levels of sub menus can be associated with each icon, with each sub menu simply defined as a hidden DIV on the page.",
+  "keywords": ["icon", "menu", "tabs", "ui", "dropdown", "navigation"],
+  "version": "1.0.0",
+  "author": {
+    "name": "Dynamic Drive",
+    "email" : "ddrivehelp@gmail.com",
+		"url": "http://www.dynamicdrive.com"
+  },
+  "licenses": [
+    {
+      "type": "Freeware",
+      "url": "http://www.dynamicdrive.com/notice.htm"
+    }
+  ],
+  "dependencies": {
+    "jquery": ">=1.5"
+  },
+  "homepage": "http://www.dynamicdrive.com/dynamicindex1/ddiconmenu.htm",
+  "docs": "http://www.dynamicdrive.com/dynamicindex1/ddiconmenu.htm",
+  "demo": "http://www.dynamicdrive.com/dynamicindex1/ddiconmenu.htm",
+  "download": "http://www.dynamicdrive.com/dynamicindex1/ddiconmenu.htm"
+}

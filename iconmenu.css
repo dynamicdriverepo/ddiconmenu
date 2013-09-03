@@ -1,0 +1,155 @@
+/* ################# Top Level Icon Menu CSS ############## */
+
+ul.iconmenu{
+font-size: 1em;
+list-style: none;
+position: fixed;
+left: 0;
+top: 100px; /* offset from top of page to display icon menu */
+margin: 0;
+padding: 0;
+width: 2em;
+background: #eee;
+border-top-right-radius: 5px;
+border-bottom-right-radius: 5px;
+box-shadow: 3px 1px 3px rgba(0,0,0,0.4);
+}
+
+ul.iconmenu li{
+text-align: center;
+cursor: pointer;
+}
+
+ul.iconmenu li a{
+display: block;
+text-decoration: none;
+color: black;
+padding: 12px 5px;
+border-bottom: 1px solid white;
+}
+
+ul.iconmenu li a:last-of-type{
+border-bottom-width: 0;
+padding-bottom: 7px;
+margin-bottom: 3px;
+}
+
+ul.iconmenu li a:hover, ul.iconmenu li a.selected{ /* style for selected icon */
+background: #D2FFFF;
+}
+
+/* ################# Shared icon submenu DIV CSS ############## */
+
+
+div.iconsubmenu{
+width:300px; /*default width of each icon sub menu*/
+position:absolute;
+visibility:hidden;
+padding:0;
+background: #F4F4F4;
+-webkit-box-shadow: 5px 5px 5px #c8c8c8; /*css 3 shadows*/
+-moz-box-shadow: 5px 5px 5px #c8c8c8;
+box-shadow: 5px 5px 5px #c8c8c8;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+div.iconsubmenu a{
+text-decoration:none;
+position: relative;
+}
+
+div.iconsubmenu .arrow{ /* default look for arrow of sub menu */
+content: '';
+display: block;
+position:absolute;
+border: 0.4em solid transparent;
+border-right-color: #cd0000;
+top: 10px;
+z-index:1000;
+}
+
+/* ################# Mixed Content specific CSS ############## */
+
+div.mixedcontent{
+border: 10px solid red;
+padding: 10px;
+border-radius: 10px;
+}
+
+
+div.mixedcontent a[rel]{ /* links inside mixedcontent that contains a drop down */
+border-bottom: 2px dotted red;
+}
+
+div.mixedcontent .column{ /*each link column within a mixed content menu*/
+float:left;
+width:50%;
+padding:5px; /*add padding inside p and .column elements within mixed content menu*/
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+
+div.mixedcontent .column ul{
+margin:0;
+margin-left:5px;
+padding:0;
+list-style:none;
+}
+
+div.mixedcontent .column ul li{
+margin-bottom:3px;
+}
+
+
+/* ################# Vertical List Menu Specific CSS ############## */
+
+div.dropdownmenu{
+width:200px;
+border: 10px solid red;
+}
+
+div.dropdownmenu ul{ /*style any UL within vertical menu with class="ulmenu"*/
+margin:0;
+padding:0;
+border:1px solid gray;
+border-bottom-width:0;
+list-style:none;
+}
+
+div.dropdownmenu ul a{
+display:block;
+border-bottom:1px solid gray;
+padding:5px;
+}
+
+div.dropdownmenu ul a:hover, div.dropdownmenu ul a.selected{ /* style for selected menu item */
+background:lightyellow;
+}
+
+div.dropdownmenu a[rel]:after{ /* style anchor links inside dropdownmenu that contain a drop down */
+content: '>';
+font-size: 16px;
+height: 100%;
+position: absolute;
+top: 2px;
+right: 5px;
+}
+
+/* ################# Tooltip Specific CSS ############## */
+
+div.icontooltip{
+background: black;
+color: white;
+width:auto;
+padding: 5px;
+border-radius: 5px;
+padding: 5px 8px;
+}
+
+div.icontooltip .arrow{
+border-right-color: black;
+}
